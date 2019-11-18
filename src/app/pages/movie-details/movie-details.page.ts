@@ -9,15 +9,10 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class MovieDetailsPage implements OnInit {
   information = null;
-<<<<<<< HEAD
-   
-  constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService ) { }
-=======
   constructor(
     private activatedRoute: ActivatedRoute,
     private movieService: MovieService
   ) {}
->>>>>>> cdd6c06b2e7b7aa97d00b7bbc5096f5c37fe4c9a
 
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get("id");
@@ -28,12 +23,7 @@ export class MovieDetailsPage implements OnInit {
       this.information = result;
     });
   }
-<<<<<<< HEAD
-  openWebsite(){
-    window.open(this.information.Website, '_blank');
-=======
   openWebsite() {
     window.open(this.information.Website, "_blank");
->>>>>>> cdd6c06b2e7b7aa97d00b7bbc5096f5c37fe4c9a
   }
 }
