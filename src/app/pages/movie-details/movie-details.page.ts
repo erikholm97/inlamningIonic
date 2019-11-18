@@ -10,6 +10,7 @@ import { MovieService } from 'src/app/services/movie.service';
 export class MovieDetailsPage implements OnInit {
 
   information = null;
+   
   constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService ) { }
 
   ngOnInit() {
@@ -21,6 +22,6 @@ export class MovieDetailsPage implements OnInit {
     });
   }
   openWebsite(){
-    window.open(this.information.Website, '_blanc');
+    window.open(this.information.Website, '_blank');
   }
 }
