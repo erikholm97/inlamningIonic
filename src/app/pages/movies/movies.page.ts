@@ -13,14 +13,10 @@ export class MoviesPage implements OnInit {
   searchTerm = "";
   type: SearchType = SearchType.all;
 
-  constructor(private movieService: MovieService) {}
+  constructor(private movieService: MovieService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
   searchChanged() {
     this.results = this.movieService.searchData(this.searchTerm, this.type);
-
-    /*this.results.subscribe(res => ){
-    }
-    */
   }
 }

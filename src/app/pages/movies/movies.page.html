@@ -1,16 +1,19 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>My Movie Search</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Find Movies</ion-title>
+    </ion-toolbar>
+  </ion-header>
 <ion-content padding>
-  <ion-searchbar
+  <ion-searchbar color="primary" showCancelButton="focus" 
     [(ngModel)]="searchTerm"
     (ionChange)="searchChanged($event)"
   ></ion-searchbar>
 
-  <ion-item>
+  <ion-item >
+    <ion-icon name="albums"></ion-icon>
     <ion-label>Select Searchtype</ion-label>
     <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
       <ion-select-option value="">All</ion-select-option>
