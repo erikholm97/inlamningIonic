@@ -1,9 +1,13 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button color="secondary" defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title> {{ information?.Genre }}</ion-title>
+    <ion-title
+      ><ion-text color="secondary"
+        >{{ information?.Genre }}</ion-text
+      ></ion-title
+    >
   </ion-toolbar>
 </ion-header>
 <ion-content>

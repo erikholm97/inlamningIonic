@@ -9,7 +9,7 @@
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint:  #e2c044;
+  --ion-color-primary-tint: #e2c044;
 
   /** secondary **/
   --ion-color-secondary: #ffce00;
@@ -76,8 +76,12 @@
   --ion-color-light-tint: #f5f6f9;
 }
 // colors #d3d0cb #e2c044 #1c414b #587b7f #1e2019 //https://coolors.co/d3d0cb-e2c044-1c414b-587b7f-1e2019
-ion-content{
-
-  --ion-background-color:#ffce00;
+ion-content {
+  --ion-background-color: #ffce00;
 }
-
+ion-alert {
+  --background: #ffce00 !important;
+  --ion-text-color: #1e2019 !important;
+  --ion-color-step-550: #1e2019 !important;
+  --border-color: #1e2019 !important;
+}

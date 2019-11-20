@@ -5,12 +5,49 @@
 </ion-header>
 
 <ion-content>
-  <div class="camera-content"> 
-   <img src="../../../assets/icon/film-negatives.png"/>
+  <div class="camera-content">
+    <img src="../../../assets/icon/film-negatives.png" />
   </div>
-  
-<div margin-vertical text-center>
-  <ion-button (click)="go()">Movie Finder</ion-button>
-</div>
-</ion-content>
 
+  <div margin-vertical text-center>
+    <ion-button style="color: #ffce00; " (click)="go()"
+      >Find more movies in Movie Finder</ion-button
+    >
+  </div>
+  <div style="margin-bottom: 5px;" margin-vertical text-center class="news">
+    <ion-title>Movies of this year</ion-title>
+  </div>
+  <ion-searchbar
+    margin-vertical
+    text-center
+    color="primary"
+    [(ngModel)]="searchTerm"
+    (ionChange)="searchChanged($event)"
+  ></ion-searchbar>
+  <ion-list>
+    <ion-item
+      button
+      *ngFor="let item of (results | async)"
+      [routerLink]="['/', 'movies', item.imdbID]"
+    >
+      <ion-avatar slot="start">
+        <img [src]="item.Poster" *ngIf="item.Poster != 'N/A'" />
+      </ion-avatar>
+      <ion-label text-wrap>
+        <h3>{{item.Title}}</h3>
+        {{item.Year}}
+      </ion-label>
+      <ion-icon
+        slot="end"
+        *ngIf="item.Type == 'movie'"
+        name="videocam"
+      ></ion-icon>
+      <ion-icon slot="end" *ngIf="item.Type == 'series'" name="tv"></ion-icon>
+      <ion-icon
+        slot="end"
+        *ngIf="item.Type == 'game'"
+        name="logo-game-controller-b"
+      ></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

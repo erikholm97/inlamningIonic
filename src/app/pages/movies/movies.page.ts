@@ -12,10 +12,9 @@ export class MoviesPage implements OnInit {
   results: Observable<any>; //Using when the data returns.
   searchTerm = "";
   type: SearchType = SearchType.all;
+  constructor(private movieService: MovieService) {}
 
-  constructor(private movieService: MovieService) { }
-
-  ngOnInit() { }
+  ngOnInit() {}
   searchChanged() {
     this.results = this.movieService.searchData(this.searchTerm, this.type);
   }
