@@ -1,3 +1,7 @@
+ion-content .ion-title {
+  z-index: 0;
+  font-weight: 600;
+}
 ion-content span {
   font-weight: 600;
 }

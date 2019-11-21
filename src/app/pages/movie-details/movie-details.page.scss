@@ -1,4 +1,9 @@
-ion-content {                       
+ion-content {    
+  .ion-title{
+      z-index: 0;
+      font-weight: 600;
+  }
+                   
   span {
     font-weight: 600;
   }

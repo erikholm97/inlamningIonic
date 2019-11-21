@@ -14,11 +14,11 @@
   <div class="key-frames-animation">
     <ion-card *ngIf="information">
       <ion-card-header>
-        <ion-card-title>
+        <ion-card-title class="ion-title">
           {{ information.Title }}
         </ion-card-title>
         <ion-card-subtitle>
-          {{ information.Year }}
+        <span color="secondary"> Year:</span>  {{ information.Year }}
         </ion-card-subtitle>
       </ion-card-header>
       <div class="key-frames-animation-content">
@@ -27,7 +27,7 @@
           {{ information.plot }}
             <ion-item lines="none" class="rating-content" >
               <ion-label margin-vertical class="ion-label-one"
-                ><span>Rating: </span>{{ information.imdbRating }}</ion-label
+                ><span>Rating: </span>{{ information.imdbRating }} <ion-icon name="md-star"></ion-icon></ion-label
               >
               <ion-icon name="star" slot="secondary"></ion-icon>
             </ion-item>
