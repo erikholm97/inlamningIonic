@@ -22,23 +22,26 @@
         </ion-card-subtitle>
       </ion-card-header>
       <div class="key-frames-animation-content">
-        <ion-card-content>
-          <img [src]="information.Poster" class="info-img" />
+        <ion-card-content >
+          <img [src]="information.Poster" class="info-img" *ngIf="information.Poster != 'N/A'"/>
           {{ information.plot }}
-          <ion-item lines="none" class="rating-content">
-            <ion-label>{{ information.imdbRating }}</ion-label>
-            <ion-icon name="star" slot="secondary"></ion-icon>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-label text-wrap>
-              <span>Director: </span>{{ information.Director }}</ion-label
-            >
-          </ion-item>
-          <ion-item lines="none">
-            <ion-label text-wrap
-              ><span>Actors: </span>{{ information.Actors }}</ion-label
-            >
-          </ion-item>
+            <ion-item lines="none" class="rating-content" >
+              <ion-label margin-vertical class="ion-label-one"
+                ><span>Rating: </span>{{ information.imdbRating }}</ion-label
+              >
+              <ion-icon name="star" slot="secondary"></ion-icon>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label text-wrap class="ion-label-two">
+                <span>Director: </span>{{ information.Director }}</ion-label
+              >
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label text-wrap class="ion-label-three"
+                ><span>Actors: </span>{{ information.Actors }}</ion-label
+              >
+            </ion-item>
+          
         </ion-card-content>
       </div>
     </ion-card>

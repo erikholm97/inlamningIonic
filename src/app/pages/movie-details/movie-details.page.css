@@ -1,14 +1,23 @@
-span {
+ion-content span {
   font-weight: 600;
 }
-.info-img {
+ion-content .key-frames-animation .info-img {
   max-height: 30vh;
   object-fit: contain;
   padding: 10px;
+  animation: moveimg 1s;
 }
-.key-frames-animation {
+ion-content .key-frames-animation .key-frames-animation {
   position: relative;
   animation: mymove 1s;
+}
+@keyframes moveimg {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 @keyframes mymove {
   from {
@@ -16,5 +25,41 @@ span {
   }
   to {
     transform: translateY(0px);
+  }
+}
+ion-content .key-frames-animation .ion-label-one {
+  position: relative;
+  animation: movetext 0.6s;
+}
+@keyframes movetext {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+ion-content .key-frames-animation .ion-label-two {
+  position: relative;
+  animation: movetext 0.8s;
+}
+@keyframes movetext {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+ion-content .key-frames-animation .ion-label-three {
+  position: relative;
+  animation: movetext 1s;
+}
+@keyframes movetext {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }

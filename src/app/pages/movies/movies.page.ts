@@ -9,13 +9,13 @@ import { SearchType } from "src/app/services/movie.service";
   styleUrls: ["./movies.page.scss"]
 })
 export class MoviesPage implements OnInit {
-  results: Observable<any>; //Using when the data returns.
+  results: Observable<any>; 
   searchTerm = "";
   type: SearchType = SearchType.all;
-  constructor(private movieService: MovieService) {}
+  constructor(private movieService: MovieService) {} 
 
   ngOnInit() {}
   searchChanged() {
-    this.results = this.movieService.searchData(this.searchTerm, this.type);
+    this.results = this.movieService.searchData(this.searchTerm, this.type); // Function who changes the results if the text in the searchbar change. 
   }
 }

@@ -1,0 +1,12 @@
+.key-frames-animation {
+  position: relative;
+  animation: mymove 0.8s;
+}
+@keyframes mymove {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
