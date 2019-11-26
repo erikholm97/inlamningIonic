@@ -16,6 +16,7 @@ export class HomePage implements OnInit {
   constructor(private router: Router, private movieService: MovieService) {}
 
   go() {
+    // Function to navigate to movies page
     this.router.navigate(["/movies"]);
   }
 

@@ -5,7 +5,7 @@
   "background_color": "#ffce00",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://webbkurs.ei.hv.se/~erho0008/www/",
   "icons": [
     {
       "src": "assets/icons/android/mipmap-hdpi/ic_launcher.png",

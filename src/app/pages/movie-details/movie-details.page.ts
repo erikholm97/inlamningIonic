@@ -16,14 +16,13 @@ export class MovieDetailsPage implements OnInit {
 
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get("id");
-    console.log(id);
 
     this.movieService.getDetails(id).subscribe(result => {
-      console.log("details: ", result);
       this.information = result;
     });
   }
   openWebsite() {
+    //Function that opens a new window based on the information id.
     window.open(this.information.Website, "_blank");
   }
 }

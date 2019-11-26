@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
-  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "", redirectTo: "home", pathMatch: "full" }, //Redirecting to home if path is empty.
   {
     path: "movies",
     loadChildren: "./pages/movies/movies.module#MoviesPageModule"
@@ -13,14 +13,13 @@ const routes: Routes = [
       "./pages/movie-details/movie-details.module#MovieDetailsPageModule"
   },
   {
-    path: 'home',
+    path: "home",
     loadChildren: "./pages/home/home.module#HomePageModule"
   }
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
