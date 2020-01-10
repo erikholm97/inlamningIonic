@@ -3,6 +3,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { SearchType } from "src/app/services/movie.service";
 import { Observable } from "rxjs";
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: "app-home",
@@ -10,10 +11,7 @@ import { Observable } from "rxjs";
   styleUrls: ["./home.page.scss"]
 })
 export class HomePage implements OnInit {
-  results: Observable<any>; //Using when the data returns.
-  searchTerm = "2019";
-  type: SearchType = SearchType.all;
-  constructor(private router: Router, private movieService: MovieService) {}
+  constructor(private router: Router, private themeService: ThemeService) {}
 
   goToMovies() {
     // Function to navigate to movies page
@@ -23,9 +21,10 @@ export class HomePage implements OnInit {
     // Function to navigate to movies page
     this.router.navigate(["/help"]);
   }
+  toggleDarkMode(){
+    
+    this.themeService.toggleAppTheme();
+  }
 
   ngOnInit() {}
-  searchChanged() {
-    this.results = this.movieService.searchData(this.searchTerm, this.type);
-  }
 }
