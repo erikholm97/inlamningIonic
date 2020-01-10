@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-//import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
@@ -30,7 +29,7 @@ export class MovieService {
         })
       );
   }
-  // test
+  // Code refference by https://www.youtube.com/watch?v=3QPbBJgNF94&t Simon Grimm
   getDetails(id) {
     console.log(id);
     return this.http.get(`${this.url}?i=${id}&plot=full&apikey=${this.apiKey}`);
