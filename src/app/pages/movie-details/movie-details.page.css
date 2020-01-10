@@ -17,53 +17,57 @@ ion-content .key-frames-animation .key-frames-animation {
 }
 @keyframes moveimg {
   from {
-    transform: translateY(-400px);
+    transform: translateY(-800px);
   }
   to {
     transform: translateY(0px);
   }
 }
 @keyframes mymove {
-  from {
-    transform: translateY(200px);
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: translateY(0px);
+  100% {
+    opacity: 1;
   }
 }
 ion-content .key-frames-animation .ion-label-one {
   position: relative;
-  animation: movetext 0.6s;
+  animation: movetext 1s;
 }
 @keyframes movetext {
-  from {
-    transform: translateX(-200px);
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: translateX(0px);
+  100% {
+    opacity: 1;
   }
 }
 ion-content .key-frames-animation .ion-label-two {
   position: relative;
-  animation: movetext 0.8s;
+  animation: movetext 1.2s;
 }
 @keyframes movetext {
-  from {
-    transform: translateX(-200px);
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: translateX(0px);
+  100% {
+    opacity: 1;
   }
 }
 ion-content .key-frames-animation .ion-label-three {
   position: relative;
-  animation: movetext 1s;
+  animation: movetext 1.4s;
 }
 @keyframes movetext {
-  from {
-    transform: translateX(-200px);
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: translateX(0px);
+  100% {
+    opacity: 1;
   }
+}
+ion-content .key-frames-animation .ion-label-four {
+  position: relative;
+  animation: movetext 1.6s;
 }

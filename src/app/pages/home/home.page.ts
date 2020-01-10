@@ -19,10 +19,6 @@ export class HomePage implements OnInit {
     // Function to navigate to movies page
     this.router.navigate(["/movies"]);
   }
-  goToFavourites() {
-    // Function to navigate to movies page
-    this.router.navigate(["/favourites"]);
-  }
   goToHelp() {
     // Function to navigate to movies page
     this.router.navigate(["/help"]);

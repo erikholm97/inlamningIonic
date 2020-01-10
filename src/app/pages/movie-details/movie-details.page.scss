@@ -1,74 +1,78 @@
-ion-content {    
-  .ion-title{
-      z-index: 0;
-      font-weight: 600;
+ion-content {
+  .ion-title {
+    z-index: 0;
+    font-weight: 600;
   }
-                   
+
   span {
     font-weight: 600;
   }
-  .key-frames-animation{
-  .info-img {
-    max-height: 30vh;
-    object-fit: contain;
-    padding: 10px;
-    animation: moveimg 1s;
-  }
   .key-frames-animation {
-    position: relative;
-    animation: mymove 1s;
+    .info-img {
+      max-height: 30vh;
+      object-fit: contain;
+      padding: 10px;
+      animation: moveimg 1s;
+    }
+    .key-frames-animation {
+      position: relative;
+      animation: mymove 1s;
+    }
+    @keyframes moveimg {
+      from {
+        transform: translateY(-800px);
+      }
+      to {
+        transform: translateY(0px);
+      }
+    }
+    @keyframes mymove {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .ion-label-one {
+      position: relative;
+      animation: movetext 1s;
+    }
+    @keyframes movetext {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .ion-label-two {
+      position: relative;
+      animation: movetext 1.2s;
+    }
+    @keyframes movetext {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .ion-label-three {
+      position: relative;
+      animation: movetext 1.4s;
+    }
+    @keyframes movetext {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .ion-label-four {
+      position: relative;
+      animation: movetext 1.6s;
+    }
   }
-  @keyframes moveimg {
-    from {
-      transform: translateY(-400px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-  @keyframes mymove {
-    from {
-      transform: translateY(200px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-  .ion-label-one {
-    position: relative;
-    animation: movetext 0.6s;
-  }
-  @keyframes movetext {
-    from {
-      transform: translateX(-200px);
-    }
-    to {
-      transform: translateX(0px);
-    }
-  }
-  .ion-label-two {
-    position: relative;
-    animation: movetext 0.8s;
-  }
-  @keyframes movetext {
-    from {
-      transform: translateX(-200px);
-    }
-    to {
-      transform: translateX(0px);
-    }
-  }
-  .ion-label-three {
-    position: relative;
-    animation: movetext 1s;
-  }
-  @keyframes movetext {
-    from {
-      transform: translateX(-200px);
-    }
-    to {
-      transform: translateX(0px);
-    }
-  }
-}
 }

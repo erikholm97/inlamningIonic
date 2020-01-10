@@ -21,9 +21,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/help/help.module').then( m => m.HelpPageModule)
   },
   {
-    path: 'favourites',
-    loadChildren: () => import('./pages/favourites/favourites.module').then( m => m.FavouritesPageModule)
-  },  {
     path: 'how-to-search',
     loadChildren: () => import('./pages/how-to-search/how-to-search.module').then( m => m.HowToSearchPageModule)
   },
