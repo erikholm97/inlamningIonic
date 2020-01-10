@@ -15,9 +15,17 @@ export class HomePage implements OnInit {
   type: SearchType = SearchType.all;
   constructor(private router: Router, private movieService: MovieService) {}
 
-  go() {
+  goToMovies() {
     // Function to navigate to movies page
     this.router.navigate(["/movies"]);
+  }
+  goToFavourites() {
+    // Function to navigate to movies page
+    this.router.navigate(["/favourites"]);
+  }
+  goToHelp() {
+    // Function to navigate to movies page
+    this.router.navigate(["/help"]);
   }
 
   ngOnInit() {}

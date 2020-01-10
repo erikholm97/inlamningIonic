@@ -1,20 +1,21 @@
-@keyframes moveText {
+@keyframes moveImg {
   from {
-    transform: translatex(-200px);
+    transform: translatey(-200px);
   }
   to {
-    transform: translatex(0px);
+    transform: translatey(0px);
   }
 }
 .button:hover {
   background-color: #ffffff;
   color: white;
 }
-h1 {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   position: relative;
-  animation: moveText 0.8s;
+  animation: moveImg 0.5s;
 }
+

@@ -1,16 +1,20 @@
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  position: relative;
-  animation: movepng 0.8s;
-}
-@keyframes movepng {
+@keyframes moveImg {
   from {
     transform: translatey(-200px);
   }
   to {
     transform: translatey(0px);
   }
+}
+.button:hover {
+  background-color: #ffffff;
+  color: white;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  position: relative;
+  animation: moveImg 0.5s;
 }

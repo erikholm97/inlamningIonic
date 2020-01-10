@@ -14,7 +14,7 @@ export enum SearchType {
 })
 export class MovieService {
   url = "https://www.omdbapi.com/"; //Api provided from omdapi.
-  apiKey = "e3afe514";
+  apiKey = "e3afe514"; // Key
 
   constructor(private http: HttpClient) {}
   // tslint:disable-next-line: no-unused-expression

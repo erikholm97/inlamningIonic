@@ -9,7 +9,7 @@ import { SearchType } from "src/app/services/movie.service";
   styleUrls: ["./movies.page.scss"]
 })
 export class MoviesPage implements OnInit {
-  results: Observable<any>; 
+  results: Observable<any>;
   searchTerm = "";
   type: SearchType = SearchType.all;
   constructor(private movieService: MovieService) {} 

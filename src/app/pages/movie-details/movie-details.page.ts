@@ -20,6 +20,7 @@ export class MovieDetailsPage implements OnInit {
     this.movieService.getDetails(id).subscribe(result => {
       this.information = result;
     });
+    
   }
   openWebsite() {
     //Function that opens a new window based on the information id.

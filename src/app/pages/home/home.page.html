@@ -6,24 +6,16 @@
 
 <ion-content>
   <div class="camera-content">
-    <ion-text color="first">
-      <h1 class="front-page-h1" text-center>The Movie Finder</h1>
-    </ion-text>
-    <!--<img src="assets/icon/film-negatives.png" />-->
+    <img src="assets/icon/film-negatives.png" />
     <!--For webbserver ~erho0008/www/assets/icon/film-negatives.png-->
     <!--
       <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>-->
   </div>
-
-  <div margin-vertical text-center>
-    <ion-button class="button" style="color: #ffffff; " (click)="go()"
-      >Search Movies</ion-button
-    >
-    <ion-button class="button" style="color: #ffffff; " (click)="go()"
-      >Latest Movies</ion-button
-    >
-    <ion-button class="button" style="color: #ffffff; " (click)="go()"
-      >About</ion-button
-    >
-  </div>
+  <ion-text color="first">
+    <div margin-horizontal text-center>
+        <ion-button (click)="goToMovies()" >Search Movie</ion-button>
+        <ion-button (click)="goToFavourites()" >Go to your favourites</ion-button>
+        <ion-button (click)="goToHelp()" >How to use?</ion-button>  
+    </div>
+  </ion-text>
 </ion-content>
