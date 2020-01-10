@@ -21,8 +21,8 @@ export class HomePage implements OnInit {
     // Function to navigate to movies page
     this.router.navigate(["/help"]);
   }
+  //Ref https://www.youtube.com/watch?v=UP5Q4R4sXQg Simon Grimm
   toggleDarkMode(){
-    
     this.themeService.toggleAppTheme();
   }
 

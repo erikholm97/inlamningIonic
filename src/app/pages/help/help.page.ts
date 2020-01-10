@@ -15,4 +15,8 @@ export class HelpPage implements OnInit {
     // Function to navigate to movies page
     this.router.navigate(["/how-to-search"]);
   }
+  goToHowToGoBack() {
+    // Function to navigate to movies page
+    this.router.navigate(["/go-back"]);
+  }
 }

@@ -5,9 +5,9 @@ import {Platform} from "@ionic/angular";
   providedIn: 'root'
 })
 export class ThemeService {
-  darkMode = false;
+  darkMode = false; // Dark mode set to false aslong as the button is not toggled
   constructor(private plt: Platform) {
-    
+  // //Ref https://www.youtube.com/watch?v=UP5Q4R4sXQg Simon Grimm
     this.plt.ready().then(() =>{
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark");
       prefersDark.addListener(e =>{
